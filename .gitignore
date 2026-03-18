@@ -1,5 +1,5 @@
 # Raw datasets (too large for Git — use DVC or Git LFS instead)
-Dataset/
+data/Dataset/
 *.jpg
 *.jpeg
 *.png
@@ -210,4 +210,4 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
-/Dataset
+/data/Dataset
