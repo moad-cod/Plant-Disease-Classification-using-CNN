@@ -1,3 +1,12 @@
+# Raw datasets (too large for Git — use DVC or Git LFS instead)
+data/raw/
+data/train
+data/test
+data/valid
+*.jpg
+*.jpeg
+*.png
+*.pth
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
