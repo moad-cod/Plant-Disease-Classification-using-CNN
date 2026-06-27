@@ -327,8 +327,6 @@ LinkedIn:
 
 https://www.linkedin.com/in/mouad-elbaz
 
----
+X:
 
-## 📜 License
-
-This project is released under the **MIT License**.
+https://x.com/MouadEl_AI
