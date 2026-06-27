@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background-default text-gray-900 antialiased font-sans;
+  }
+}
+
+@layer components {
+  .glass-nav {
+    @apply bg-white/85 backdrop-blur-md border-b border-gray-200 sticky top-0 z-50 transition-all duration-300;
+  }
+  
+  .card {
+    @apply bg-surface-default border border-gray-200 rounded-2xl shadow-soft hover:shadow-medium hover:bg-surface-hover transition-all duration-300;
+  }
+
+  .btn-primary {
+    @apply bg-primary-700 text-white font-medium px-6 py-3 rounded-xl shadow-soft hover:shadow-medium hover:-translate-y-[1px] hover:bg-primary-800 active:translate-y-0 transition-all duration-200 flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-soft;
+  }
+
+  .btn-secondary {
+    @apply bg-surface-default text-gray-900 border border-gray-200 font-medium px-6 py-3 rounded-xl shadow-soft hover:shadow-medium hover:-translate-y-[1px] hover:bg-background-alt active:translate-y-0 transition-all duration-200 flex items-center justify-center gap-2;
+  }
+
+  .upload-zone {
+    @apply border-2 border-dashed border-gray-200 rounded-[24px] p-12 flex flex-col items-center justify-center text-center cursor-pointer transition-all duration-300 bg-background-default;
+  }
+
+  .upload-zone:hover {
+    @apply border-primary-400 bg-primary-50;
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider shadow-sm;
+  }
+  
+  .badge-healthy {
+    @apply bg-green-100 text-green-800;
+  }
+  
+  .badge-moderate {
+    @apply bg-yellow-100 text-yellow-800;
+  }
+  
+  .badge-severe {
+    @apply bg-red-100 text-red-800;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Hide Streamlit iframe if embedded (just in case) */
+iframe {
+  border: none;
+}
